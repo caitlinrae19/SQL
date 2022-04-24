@@ -1,0 +1,21 @@
+CREATE TABLE Book_Store (id INTEGER PRIMARY KEY, name TEXT, year_published INTEGER, price INTEGER, quantity INTEGER, cover_type TEXT);
+
+INSERT INTO Book_Store VALUES (1, "Kingdom of the Feared", 2022, 15.99, 16, "hardcover");
+INSERT INTO Book_Store VALUES (2, "Long Live the Pumpkin Queen", 2022, 15.99, 13, "hardcover");
+INSERT INTO Book_Store VALUES (3, "The Great Reset: Joe Biden", 2022, 21.99, 22, "hardcover");
+INSERT INTO Book_Store VALUES (4, "The Pawn and the Puppet", 2021, 19.99, 12, "hardcover");
+INSERT INTO Book_Store VALUES (5, "House of Sky and Breath", 2022, 21.99, 8, "paperback");
+INSERT INTO Book_Store VALUES (6, "Maus I", 1986, 14.49, 5, "paperback");
+INSERT INTO Book_Store VALUES (7, "The Overnight Guest", 2022, 14.99, 13, "paperback");
+INSERT INTO Book_Store VALUES (8, "Origin: A Genetic History of the Americas", 2022, 24.99, 18, "hardcover");
+INSERT INTO Book_Store VALUES (9, "It Ends with Us", 2016, 12.99, 14, "paperback");
+INSERT INTO Book_Store VALUES (10, "The Complete Maus: A Survivor's Tale", 1996, 31.49, 2, "hardcover");
+INSERT INTO Book_Store VALUES (11, "Red-Handed: How American Elites Get Rich Helping China Win", 2021, 23.99, 23, "hardcover");
+INSERT INTO Book_Store VALUES (12, "Verity", 2021, 13.99, 6, "paperback");
+INSERT INTO Book_Store VALUES (13, "Demon Slayer: Kimetsu no Yaiba, Vol. 6", 2019, 9.99, 12, "paperback");
+INSERT INTO Book_Store VALUES (14, "The Seven Husbands of Evelyn Hugo", 2018, 12.99, 15, "paperback");
+INSERT INTO Book_Store VALUES (15, "Maus II", 1992, 14.49, 7, "paperback");
+
+SELECT * FROM Book_Store;
+SELECT SUM(quantity) from Book_Store;
+SELECT * FROM Book_Store ORDER BY price;
